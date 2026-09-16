@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login • IndStore</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="auth.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Background -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+
+    <main class="auth-wrapper">
+
+
+        <!-- ================================= -->
+        <!-- LEFT BRAND SECTION -->
+        <!-- ================================= -->
+
+        <section class="brand-panel">
+
+
+            <!-- Logo -->
+
+            <div class="brand-logo">
+
+                <img
+                    src="logo.png"
+                    alt="IndStore Logo"
+                >
+
+                <span>IndStore</span>
+
+            </div>
+
+
+            <!-- Brand Content -->
+
+            <div class="brand-content">
+
+
+                <span class="brand-badge">
+                    India's App Store
+                </span>
+
+
+                <h1>
+                    Discover.
+                    <span>Download.</span>
+                    Create.
+                </h1>
+
+
+                <p>
+                    Explore apps and games made for everyone.
+                    Join India's growing developer community.
+                </p>
+
+
+                <!-- Feature 1 -->
+
+                <div class="brand-features">
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+
+                            <img
+                                src="https://img.icons8.com/fluency/48/lightning-bolt.png"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Fast Downloads
+                            </strong>
+
+                            <small>
+                                Simple & quick app downloads
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 2 -->
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+
+                            <img
+                                src="https://img.icons8.com/fluency/48/security-shield-green.png"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Trusted Platform
+                            </strong>
+
+                            <small>
+                                Built with security in mind
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Feature 3 -->
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+
+                            <img
+                                src="https://img.icons8.com/fluency/48/rocket.png"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                For Developers
+                            </strong>
+
+                            <small>
+                                Publish your apps for free
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="brand-footer">
+                © 2026 IndStore
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================================= -->
+        <!-- RIGHT LOGIN SECTION -->
+        <!-- ================================= -->
+
+        <section class="login-panel">
+
+
+            <!-- ================================= -->
+            <!-- LOGIN CARD -->
+            <!-- ================================= -->
+
+            <div
+                class="login-card"
+                id="loginCard"
+            >
+
+
+                <!-- Mobile Logo -->
+
+                <div class="mobile-logo">
+
+                    <img
+                        src="logo.png"
+                        alt="IndStore"
+                    >
+
+                    <span>
+                        IndStore
+                    </span>
+
+                </div>
+
+
+
+                <!-- Welcome -->
+
+                <div class="welcome">
+
+                    <span>
+                        WELCOME BACK
+                    </span>
+
+                    <h2>
+                        Login to your account
+                    </h2>
+
+                    <p>
+                        Continue exploring
+                        <strong>
+                            IndStore
+                        </strong>.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Google Login -->
+
+                <button
+                    type="button"
+                    class="google-btn"
+                    id="googleLogin"
+                >
+
+                    <img
+                        src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                        alt="Google"
+                    >
+
+                    <span>
+                        Continue with Google
+                    </span>
+
+                </button>
+
+
+
+                <!-- Divider -->
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <small>
+                        OR
+                    </small>
+
+                    <span></span>
+
+                </div>
+
+
+
+                <!-- Login Form -->
+
+                <form id="loginForm">
+
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <img
+                                    src="https://img.icons8.com/ios-glyphs/30/9aa0b2/new-post.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="input-group">
+
+
+                        <div class="label-row">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+
+                            <button
+                                type="button"
+                                class="forgot-btn"
+                                id="forgotPassword"
+                            >
+                                Forgot password?
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="input-wrapper">
+
+
+                            <span class="input-icon">
+
+                                <img
+                                    src="https://img.icons8.com/ios-glyphs/30/9aa0b2/lock--v1.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="togglePassword"
+                            >
+
+                                <img
+                                    src="https://img.icons8.com/ios-glyphs/30/777777/visible.png"
+                                    alt=""
+                                >
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Login Button -->
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                        id="loginButton"
+                    >
+
+                        <span>
+                            Login to IndStore
+                        </span>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- Firebase Message -->
+
+                <div
+                    id="authMessage"
+                    class="auth-message"
+                ></div>
+
+
+
+                <!-- Create Account -->
+
+                <div class="signup-text">
+
+                    Don't have an account?
+
+                    <button
+                        type="button"
+                        id="showSignup"
+                    >
+                        Create one
+                    </button>
+
+                </div>
+
+
+
+                <!-- Security -->
+
+                <div class="secure">
+
+                    <img
+                        src="https://img.icons8.com/ios-glyphs/30/8f94a6/lock--v1.png"
+                        alt=""
+                    >
+
+                    <span>
+                        Secure authentication powered by Firebase
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================================= -->
+            <!-- SIGNUP CARD -->
+            <!-- ================================= -->
+
+            <div
+                class="login-card signup-card hidden"
+                id="signupCard"
+            >
+
+
+                <div class="mobile-logo">
+
+                    <img
+                        src="logo.png"
+                        alt="IndStore"
+                    >
+
+                    <span>
+                        IndStore
+                    </span>
+
+                </div>
+
+
+
+                <div class="welcome">
+
+                    <span>
+                        JOIN INDSTORE
+                    </span>
+
+                    <h2>
+                        Create your account
+                    </h2>
+
+                    <p>
+                        Start exploring
+                        <strong>
+                            IndStore
+                        </strong>.
+                    </p>
+
+                </div>
+
+
+
+                <!-- Signup Form -->
+
+                <form id="signupForm">
+
+
+                    <!-- Name -->
+
+                    <div class="input-group">
+
+                        <label for="signupName">
+                            Full Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <img
+                                    src="https://img.icons8.com/ios-glyphs/30/9aa0b2/user--v1.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+                            <input
+                                type="text"
+                                id="signupName"
+                                placeholder="Your name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+                        <label for="signupEmail">
+                            Email
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <img
+                                    src="https://img.icons8.com/ios-glyphs/30/9aa0b2/new-post.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+                            <input
+                                type="email"
+                                id="signupEmail"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="input-group">
+
+                        <label for="signupPassword">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <img
+                                    src="https://img.icons8.com/ios-glyphs/30/9aa0b2/lock--v1.png"
+                                    alt=""
+                                >
+
+                            </span>
+
+                            <input
+                                type="password"
+                                id="signupPassword"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                minlength="6"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Signup -->
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                    >
+
+                        <span>
+                            Create IndStore Account
+                        </span>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <div
+                    id="signupMessage"
+                    class="auth-message"
+                ></div>
+
+
+
+                <div class="signup-text">
+
+                    Already have an account?
+
+                    <button
+                        type="button"
+                        id="showLogin"
+                    >
+                        Login
+                    </button>
+
+                </div>
+
+
+
+                <div class="secure">
+
+                    <img
+                        src="https://img.icons8.com/ios-glyphs/30/8f94a6/lock--v1.png"
+                        alt=""
+                    >
+
+                    <span>
+                        Secure authentication powered by Firebase
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================================= -->
+            <!-- PROFILE CARD -->
+            <!-- ================================= -->
+
+            <div
+                class="profile-card hidden"
+                id="profileCard"
+            >
+
+
+                <div class="profile-header">
+
+                    <span>
+                        INDSTORE ACCOUNT
+                    </span>
+
+                </div>
+
+
+
+                <div class="profile-avatar">
+
+                    <img
+                        id="profilePhoto"
+                        src="logo.png"
+                        alt="Profile"
+                    >
+
+                </div>
+
+
+
+                <h2 id="profileName">
+                    User
+                </h2>
+
+
+                <p id="profileEmail">
+                    user@example.com
+                </p>
+
+
+
+                <div class="profile-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        You're signed in
+                    </span>
+
+                </div>
+
+
+
+                <button
+                    type="button"
+                    class="logout-btn"
+                    id="logoutButton"
+                >
+
+                    <img
+                        src="https://img.icons8.com/ios-glyphs/30/ffffff/exit.png"
+                        alt=""
+                    >
+
+                    <span>
+                        Sign Out
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="store-btn"
+                    id="continueStore"
+                >
+
+                    Continue to IndStore
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- Firebase JS -->
+    <script
+        type="module"
+        src="auth.js"
+    ></script>
+
+
+</body>
+
+</html>

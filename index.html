@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>IndStore — Discover What's Next</title>
+
+    <meta
+        name="description"
+        content="Discover apps, games and tools on IndStore."
+    >
+
+    <!-- FONT -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ICONS -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     PAGE LOADER
+================================================== -->
+
+<div class="page-loader" id="pageLoader">
+
+    <img
+        src="logo.png"
+        alt="IndStore"
+    >
+
+    <div class="loader-line"></div>
+
+</div>
+
+
+
+<!-- ==================================================
+     NAVBAR
+================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-inner">
+
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <img
+                src="logo.png"
+                alt="IndStore"
+            >
+
+            <span>
+                IndStore
+            </span>
+
+        </a>
+
+
+        <nav class="desktop-nav">
+
+            <a href="#discover">
+                Discover
+            </a>
+
+            <a href="#how">
+                How it works
+            </a>
+
+            <a href="#developers">
+                Developers
+            </a>
+
+            <a href="https://divyamde.github.io">
+                About
+            </a>
+
+        </nav>
+
+
+        <div
+            class="nav-actions"
+            id="authArea"
+        >
+
+            <a
+                href="login.html"
+                class="login-link"
+                id="navLogin"
+            >
+                Login
+            </a>
+
+
+            <div
+                class="user-menu hidden"
+                id="userMenu"
+            >
+
+                <button
+                    class="user-button"
+                    id="userButton"
+                    type="button"
+                >
+
+                    <img
+                        id="navUserPhoto"
+                        src="logo.png"
+                        alt="Profile"
+                    >
+
+                    <span id="navUserName">
+                        Account
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+                <div
+                    class="user-dropdown"
+                    id="userDropdown"
+                >
+
+                    <div class="dropdown-user">
+
+                        <img
+                            id="dropdownPhoto"
+                            src="logo.png"
+                            alt=""
+                        >
+
+                        <div>
+
+                            <strong id="dropdownName">
+                                User
+                            </strong>
+
+                            <small id="dropdownEmail">
+                                user@example.com
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dropdown-divider"></div>
+
+
+                    <button
+                        id="logoutButton"
+                        type="button"
+                    >
+
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                        Sign out
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="mobile-menu"
+            id="mobileMenu"
+            type="button"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- MOBILE NAV -->
+
+<div
+    class="mobile-nav"
+    id="mobileNav"
+>
+
+    <a href="#discover">
+        Discover
+    </a>
+
+    <a href="#how">
+        How it works
+    </a>
+
+    <a href="#developers">
+        Developers
+    </a>
+
+    <a href="https://divyamde.github.io">
+        About
+    </a>
+
+</div>
+
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+
+    <div class="hero-background">
+
+        <div class="gradient-orb orb-one"></div>
+
+        <div class="gradient-orb orb-two"></div>
+
+        <div class="grid-background"></div>
+
+    </div>
+
+
+    <div class="hero-inner">
+
+
+        <!-- HERO COPY -->
+
+        <div class="hero-copy reveal">
+
+
+            <div class="eyebrow">
+
+                <span class="live-dot"></span>
+
+                THE NEW WAY TO DISCOVER APPS
+
+            </div>
+
+
+            <h1>
+
+                The place where
+                <span>great apps</span>
+                get discovered.
+
+            </h1>
+
+
+            <p>
+
+                IndStore brings apps, games and digital tools
+                into one beautifully simple experience —
+                while giving independent developers a place
+                to grow.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#discover"
+                    class="btn-primary"
+                >
+
+                    Explore IndStore
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a
+                    href="#how"
+                    class="btn-ghost"
+                >
+
+                    See how it works
+
+                    <i class="fa-solid fa-play"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-proof">
+
+                <div class="proof-avatars">
+
+                    <span>A</span>
+                    <span>D</span>
+                    <span>+</span>
+
+                </div>
+
+                <p>
+                    Built for creators,
+                    developers & curious minds.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- HERO PRODUCT -->
+
+        <div class="hero-product reveal">
+
+
+            <div class="product-glow"></div>
+
+
+            <!-- FLOATING CARD -->
+
+            <div class="floating-card floating-download">
+
+                <div class="floating-icon green">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Downloaded
+                    </strong>
+
+                    <small>
+                        just now
+                    </small>
+
+                </div>
+
+                <span class="pulse-check">
+                    ✓
+                </span>
+
+            </div>
+
+
+
+            <!-- FLOATING CARD -->
+
+            <div class="floating-card floating-rating">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <strong>
+                    4.9
+                </strong>
+
+                <small>
+                    user rating
+                </small>
+
+            </div>
+
+
+
+            <!-- BROWSER -->
+
+            <div class="product-browser">
+
+
+                <div class="browser-bar">
+
+                    <div class="browser-dots">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="browser-address">
+
+                        indstore.app
+
+                    </div>
+
+
+                    <div></div>
+
+                </div>
+
+
+
+                <div class="store-ui">
+
+
+                    <!-- SIDEBAR -->
+
+                    <aside class="store-sidebar">
+
+                        <div class="store-logo">
+
+                            <img
+                                src="logo.png"
+                                alt=""
+                            >
+
+                            <span>
+                                IndStore
+                            </span>
+
+                        </div>
+
+
+                        <div class="side-item active">
+
+                            <i class="fa-solid fa-compass"></i>
+
+                            Discover
+
+                        </div>
+
+
+                        <div class="side-item">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                            Categories
+
+                        </div>
+
+
+                        <div class="side-item">
+
+                            <i class="fa-solid fa-bookmark"></i>
+
+                            Saved
+
+                        </div>
+
+
+                        <div class="side-spacer"></div>
+
+
+                        <div class="side-item">
+
+                            <i class="fa-solid fa-gear"></i>
+
+                            Settings
+
+                        </div>
+
+                    </aside>
+
+
+
+                    <!-- MAIN -->
+
+                    <div class="store-main">
+
+
+                        <div class="store-top">
+
+                            <div>
+
+                                <small>
+                                    Discover
+                                </small>
+
+                                <h3>
+                                    Something new.
+                                </h3>
+
+                            </div>
+
+
+                            <div class="store-avatar">
+
+                                <img
+                                    src="logo.png"
+                                    alt=""
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="fake-search">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            Search apps, games & tools
+
+                        </div>
+
+
+
+                        <div class="featured-app">
+
+
+                            <div class="featured-copy">
+
+                                <span>
+                                    FEATURED
+                                </span>
+
+                                <h4>
+                                    Tools that move
+                                    ideas forward.
+                                </h4>
+
+                                <p>
+                                    Explore products created
+                                    by independent developers.
+                                </p>
+
+                                <button>
+                                    Explore
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+
+                            <div class="featured-logo">
+
+                                <img
+                                    src="logo.png"
+                                    alt=""
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="store-heading">
+
+                            <strong>
+                                Popular right now
+                            </strong>
+
+                            <span>
+                                View all
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="mini-apps">
+
+
+                            <div class="mini-app">
+
+                                <div class="mini-app-icon purple-bg">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Smart AI
+                                    </strong>
+
+                                    <small>
+                                        AI & Tools
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mini-app">
+
+                                <div class="mini-app-icon blue-bg">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        StudyHub
+                                    </strong>
+
+                                    <small>
+                                        Education
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mini-app">
+
+                                <div class="mini-app-icon orange-bg">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Creator
+                                    </strong>
+
+                                    <small>
+                                        Creative
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll-indicator">
+
+        <span>
+            Scroll to explore
+        </span>
+
+        <i class="fa-solid fa-arrow-down"></i>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     MARQUEE
+================================================== -->
+
+<div class="marquee-section">
+
+    <div class="marquee">
+
+        <span>
+            DISCOVER
+        </span>
+
+        <i class="fa-solid fa-circle"></i>
+
+        <span>
+            CREATE
+        </span>
+
+        <i class="fa-solid fa-circle"></i>
+
+        <span>
+            BUILD
+        </span>
+
+        <i class="fa-solid fa-circle"></i>
+
+        <span>
+            SHARE
+        </span>
+
+        <i class="fa-solid fa-circle"></i>
+
+        <span>
+            DISCOVER
+        </span>
+
+        <i class="fa-solid fa-circle"></i>
+
+        <span>
+            CREATE
+        </span>
+
+        <i class="fa-solid fa-circle"></i>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     DISCOVER
+================================================== -->
+
+<section
+    class="section discover-section"
+    id="discover"
+>
+
+
+    <div class="section-inner">
+
+
+        <div class="section-intro reveal">
+
+            <span class="section-label">
+                ONE PLACE
+            </span>
+
+            <h2>
+                Everything you need.
+                <span>Nothing you don't.</span>
+            </h2>
+
+            <p>
+                IndStore is designed around one simple idea:
+                finding great software shouldn't feel complicated.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-showcase">
+
+
+            <!-- FEATURE -->
+
+            <div class="feature-copy reveal">
+
+                <div class="feature-number">
+                    01
+                </div>
+
+                <h3>
+                    Discover without
+                    the noise.
+                </h3>
+
+                <p>
+                    Browse apps through a clean,
+                    focused interface built around
+                    discovery instead of distractions.
+                </p>
+
+                <a href="#categories">
+                    Explore categories
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="feature-visual reveal">
+
+                <div class="discover-card">
+
+                    <div class="discover-card-header">
+
+                        <span>
+                            Explore
+                        </span>
+
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                    </div>
+
+
+                    <div class="discover-big">
+
+                        <div class="discover-big-icon">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+
+                        <h4>
+                            Find your next favourite app.
+                        </h4>
+
+                        <p>
+                            Curated categories,
+                            useful tools and
+                            independent creations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="discover-tags">
+
+                        <span>AI</span>
+                        <span>Games</span>
+                        <span>Education</span>
+                        <span>Creative</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="feature-showcase reverse">
+
+
+            <div class="feature-copy reveal">
+
+                <div class="feature-number">
+                    02
+                </div>
+
+                <h3>
+                    A better home
+                    for developers.
+                </h3>
+
+                <p>
+                    Publish your work, introduce your
+                    product and let users discover
+                    what you've built.
+                </p>
+
+                <a href="#developers">
+                    For developers
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="feature-visual reveal">
+
+                <div class="developer-preview">
+
+
+                    <div class="dev-top">
+
+                        <div class="dev-avatar">
+                            D
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Your Developer Profile
+                            </strong>
+
+                            <small>
+                                Independent creator
+                            </small>
+
+                        </div>
+
+                        <span class="verified">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                    </div>
+
+
+                    <div class="dev-stats">
+
+                        <div>
+
+                            <strong>
+                                12
+                            </strong>
+
+                            <small>
+                                Apps
+                            </small>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                8.4K
+                            </strong>
+
+                            <small>
+                                Downloads
+                            </small>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                4.8
+                            </strong>
+
+                            <small>
+                                Rating
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-line">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     HOW IT WORKS
+================================================== -->
+
+<section
+    class="how-section"
+    id="how"
+>
+
+
+    <div class="section-inner">
+
+
+        <div class="center-heading reveal">
+
+            <span class="section-label">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                From idea to discovery.
+            </h2>
+
+            <p>
+                A simple experience for everyone.
+            </p>
+
+        </div>
+
+
+
+        <div class="steps">
+
+
+            <div class="step reveal">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>
+                    Discover
+                </h3>
+
+                <p>
+                    Find apps and games
+                    that match what you're looking for.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step reveal">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+
+                <h3>
+                    Download
+                </h3>
+
+                <p>
+                    Choose an app and
+                    get started with a simple experience.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step reveal">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+
+                <h3>
+                    Create
+                </h3>
+
+                <p>
+                    Developers can bring
+                    their own ideas to the platform.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CATEGORIES
+================================================== -->
+
+<section
+    class="section categories-section"
+    id="categories"
+>
+
+
+    <div class="section-inner">
+
+
+        <div class="section-intro reveal">
+
+            <span class="section-label">
+                EXPLORE
+            </span>
+
+            <h2>
+                Find your corner
+                of IndStore.
+            </h2>
+
+        </div>
+
+
+
+        <div class="category-wall">
+
+
+            <a
+                href="#discover"
+                class="category-tile large purple-tile reveal"
+            >
+
+                <div class="tile-icon">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <h3>
+                        Games
+                    </h3>
+
+                    <p>
+                        Play something new.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square tile-arrow"></i>
+
+            </a>
+
+
+            <a
+                href="#discover"
+                class="category-tile blue-tile reveal"
+            >
+
+                <div class="tile-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <h3>
+                        Education
+                    </h3>
+
+                    <p>
+                        Learn something useful.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a
+                href="#discover"
+                class="category-tile orange-tile reveal"
+            >
+
+                <div class="tile-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <h3>
+                        Creative
+                    </h3>
+
+                    <p>
+                        Turn ideas into things.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a
+                href="#discover"
+                class="category-tile green-tile reveal"
+            >
+
+                <div class="tile-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <h3>
+                        Productivity
+                    </h3>
+
+                    <p>
+                        Do more with less.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a
+                href="#discover"
+                class="category-tile pink-tile reveal"
+            >
+
+                <div class="tile-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <h3>
+                        Social
+                    </h3>
+
+                    <p>
+                        Connect and share.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a
+                href="#discover"
+                class="category-tile cyan-tile reveal"
+            >
+
+                <div class="tile-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <h3>
+                        Utilities
+                    </h3>
+
+                    <p>
+                        Useful everyday tools.
+                    </p>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     DEVELOPER CTA
+================================================== -->
+
+<section
+    class="developer-section"
+    id="developers"
+>
+
+
+    <div class="developer-glow"></div>
+
+
+    <div class="developer-inner">
+
+
+        <div class="developer-copy reveal">
+
+            <span class="section-label light">
+                FOR DEVELOPERS
+            </span>
+
+            <h2>
+                You build it.
+                <span>We help people find it.</span>
+            </h2>
+
+            <p>
+                Give your app a home where users can
+                discover what you've created.
+            </p>
+
+            <a
+                href="login.html"
+                class="white-button"
+            >
+
+                Start building
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <div class="developer-ui reveal">
+
+
+            <div class="dev-window">
+
+                <div class="dev-window-bar">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="dev-code">
+
+                    <div>
+                        <b>const</b>
+                        app
+                        =
+                        <em>IndStore</em>
+                    </div>
+
+                    <div class="code-indent">
+                        app.<span>publish</span>({
+                    </div>
+
+                    <div class="code-indent-2">
+                        name:
+                        <i>"Your App"</i>,
+                    </div>
+
+                    <div class="code-indent-2">
+                        category:
+                        <i>"Tools"</i>
+                    </div>
+
+                    <div class="code-indent">
+                        });
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <b>await</b>
+                        app.<span>launch</span>();
+                    </div>
+
+                </div>
+
+
+                <div class="dev-success">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Your app is ready to discover
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FINAL CTA
+================================================== -->
+
+<section class="final-section">
+
+
+    <div class="final-orb"></div>
+
+
+    <div class="final-content reveal">
+
+
+        <div class="final-logo">
+
+            <img
+                src="logo.png"
+                alt="IndStore"
+            >
+
+        </div>
+
+
+        <span class="section-label">
+            START EXPLORING
+        </span>
+
+
+        <h2>
+            There's something
+            waiting for you.
+        </h2>
+
+
+        <p>
+            Explore apps, discover creators
+            and find your next favourite tool.
+        </p>
+
+
+        <div class="final-buttons">
+
+            <a
+                href="#discover"
+                class="btn-primary"
+            >
+
+                Explore IndStore
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a
+                href="https://divyamde.github.io"
+                class="btn-ghost"
+            >
+
+                About Divyam
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-inner">
+
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="brand"
+                >
+
+                    <img
+                        src="logo.png"
+                        alt="IndStore"
+                    >
+
+                    <span>
+                        IndStore
+                    </span>
+
+                </a>
+
+
+                <p>
+                    A simpler home for apps.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <strong>
+                    Product
+                </strong>
+
+                <a href="#discover">
+                    Discover
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#how">
+                    How it works
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <strong>
+                    Developers
+                </strong>
+
+                <a href="#developers">
+                    Publish
+                </a>
+
+                <a href="login.html">
+                    Developer Login
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <strong>
+                    About
+                </strong>
+
+                <a href="https://divyamde.github.io">
+                    Divyam
+                </a>
+
+                <a href="https://divyamde.github.io">
+                    Portfolio
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 IndStore
+            </span>
+
+            <span>
+                Made for creators.
+            </span>
+
+            <a href="https://divyamde.github.io">
+                divyamde.github.io
+            </a>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- FIREBASE AUTH -->
+
+<script
+    type="module"
+    src="index-auth.js"
+></script>
+
+
+
+<!-- ==================================================
+     INTERACTION
+================================================== -->
+
+<script>
+
+
+/* PAGE LOADER */
+
+window.addEventListener(
+    "load",
+    () => {
+
+        setTimeout(
+            () => {
+
+                document
+                    .getElementById("pageLoader")
+                    .classList.add("loaded");
+
+            },
+            500
+        );
+
+    }
+);
+
+
+
+/* MOBILE MENU */
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+const mobileNav =
+    document.getElementById("mobileNav");
+
+
+mobileMenu.addEventListener(
+    "click",
+    () => {
+
+        mobileNav.classList.toggle("open");
+
+        mobileMenu.innerHTML =
+            mobileNav.classList.contains("open")
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+
+    }
+);
+
+
+
+/* CLOSE MOBILE NAV */
+
+document
+    .querySelectorAll(".mobile-nav a")
+    .forEach(
+        link => {
+
+            link.addEventListener(
+                "click",
+                () => {
+
+                    mobileNav.classList.remove("open");
+
+                    mobileMenu.innerHTML =
+                        '<i class="fa-solid fa-bars"></i>';
+
+                }
+            );
+
+        }
+    );
+
+
+
+/* SCROLL REVEAL */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+const revealObserver =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(
+                entry => {
+
+                    if (
+                        entry.isIntersecting
+                    ) {
+
+                        entry.target.classList.add(
+                            "visible"
+                        );
+
+                        revealObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+revealElements.forEach(
+    element => {
+
+        revealObserver.observe(element);
+
+    }
+);
+
+
+
+/* PARALLAX HERO */
+
+const heroProduct =
+    document.querySelector(".hero-product");
+
+
+window.addEventListener(
+    "mousemove",
+    event => {
+
+        if (
+            window.innerWidth < 900
+        ) return;
+
+
+        const x =
+            (event.clientX /
+            window.innerWidth -
+            .5) * 10;
+
+
+        const y =
+            (event.clientY /
+            window.innerHeight -
+            .5) * 8;
+
+
+        heroProduct.style.transform =
+            `translate(${x}px, ${y}px)`;
+
+    }
+);
+
+
+
+/* NAVBAR SCROLL */
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        const navbar =
+            document.querySelector(".navbar");
+
+
+        if (
+            window.scrollY > 20
+        ) {
+
+            navbar.classList.add(
+                "scrolled"
+            );
+
+        } else {
+
+            navbar.classList.remove(
+                "scrolled"
+            );
+
+        }
+
+    }
+);
+
+
+</script>
+
+
+</body>
+
+</html>
